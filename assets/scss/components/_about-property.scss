@@ -64,7 +64,7 @@
 
 
      .property-description{
-        padding-top: 60px;
+        padding-top: 50px;
         h6{
            font-size: 35px;
            font-weight: 600;
@@ -72,49 +72,80 @@
         p{
            font-size: 28px;
            font-weight: 400;
+           padding-bottom: 0;
         }
-     }
+      }
   
-     .amenties{
-        padding-top: 30px;
-        h2{
-           font-size: 40px;
-           font-weight: 600;
-           color: $color-text-primary;
+      .amenties{
+         padding-top: 30px;
+         h2{
+            font-size: 40px;
+            font-weight: 600;
+            color: $color-text-primary;
+            }
+   
+         .items{padding-top: 20px;
+            .image{
+               border: 3px solid #2c2c2c;
+               border-radius: 50%;
+               width: 60px;
+               height: 60px;
+               overflow: hidden;
+               margin-right: 10px;
+   
+            }
+   
+            .item:hover img{
+               animation: move 0.3s 1 linear;
+            }
+               
+            @keyframes move {
+               0% {
+                  transform: translateY(-50px);
+               }
+         
+               100% {
+                  transform: translateY(0px);
+               }
+            }
+   
+   
+            p{
+               padding: 0;
+               color: $color-text-primary;
+            }
          }
-  
-        .items{padding-top: 20px;
-           .image{
-              border: 3px solid #2c2c2c;
-              border-radius: 50%;
-              width: 60px;
-              height: 60px;
-              overflow: hidden;
-              margin-right: 10px;
-  
-           }
-  
-           .item:hover img{
-              animation: move 0.3s 1 linear;
-           }
-             
-           @keyframes move {
-              0% {
-                 transform: translateY(-50px);
-              }
-        
-              100% {
-                 transform: translateY(0px);
-              }
-           }
-  
-  
-           p{
-              padding: 0;
-              color: $color-text-primary;
-           }
-        }
-     }
+      }
+
+      @media screen and (max-width: 1399px) {
+         .text-header{
+            font-size: 35px;
+         }
+         p{
+            font-size: 22px;
+         }
+
+         .property-description{
+            h6{
+               font-size: 25px;
+            }
+            p{
+               font-size: 18px;
+            }
+         }
+
+         .amenties{
+            h2{
+               font-size: 30px;
+            }
+         }
+      }
+
+      @media screen and (max-width: 767px) {
+         p{
+            font-size: 16px;
+         }
+      }
    }
 
 

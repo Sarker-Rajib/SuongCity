@@ -33,6 +33,10 @@
             background: url(../images/banner-image/3rd.png) no-repeat center center/cover;
          }
 
+         &.slide-properyview {
+            background: url(../images/banner-image/vbv.png) no-repeat center center/cover;
+         }
+
          .slide-text {
             position: relative;
             z-index: 99;
@@ -61,6 +65,12 @@
                font-size: 14px;
                color: #fff;
                border: 1px solid #fff;
+               border-radius: 3px;
+
+               &:hover{
+                  color: #fff;
+                  background: rgb(159, 27, 25);
+              }
             }
          }
       }
@@ -69,11 +79,13 @@
       .swiper-button-prev {
          left: 6%;
          color: #fff;
+         z-index: 999;
       }
 
       .swiper-button-next {
          right: 6%;
          color: #fff;
+         z-index: 999;
       }
    }
 }

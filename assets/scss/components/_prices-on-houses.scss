@@ -83,14 +83,35 @@
                         display: flex;
                         align-items: end;
                         opacity: 0;
+                        transition: all 0.3s ease-in-out;
 
                         ul {
                             padding: 40px;
 
                             li {
-                                font-size: 12px;
+                                font-size: 14px;
                                 color: #fff;
                                 font-weight: 300;
+
+                                i{
+                                    color: rgb(128, 128, 202);
+                                    font-size: 18;
+                                }
+
+                                &:last-child{
+                                    padding-top: 5px;
+                                    margin-top: 5px;
+                                    position: relative;
+                                    &::after{
+                                        content: "";
+                                        position: absolute;
+                                        height: 1px;
+                                        width: 45px;
+                                        background: #fff;
+                                        left: 0;
+                                        top: 0;
+                                    }
+                                }
                             }
                         }
                     }
@@ -116,6 +137,10 @@
                             color: #fff;
                             font-size: 25px;
                         }
+
+                        &.active{
+                            background: rgb(159, 27, 25);
+                        }
                     }
                 }
 
@@ -139,6 +164,13 @@
 
             .btn-view {
                 border: 1px solid $color-text-primary;
+                border-radius: 0;
+                padding: 10px 25px;
+
+                &:hover{
+                    color: #fff;
+                    background: rgb(159, 27, 25);
+                }
             }
         }
     }
