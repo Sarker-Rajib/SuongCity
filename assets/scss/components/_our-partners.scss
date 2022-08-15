@@ -1,0 +1,51 @@
+.our-partner {
+    padding: 120px 0;
+    background: url(../images/bg.png);
+
+    .container {
+        @media screen and (min-width: 1200px) {
+            max-width: 1180px;
+        }
+    }
+
+    .section-header {
+        padding-bottom: 40px;
+
+        h2 {
+            color: $color-text-primary;
+            font-weight: 500;
+            font-size: 32px;
+            position: relative;
+            z-index: 999;
+
+            &::after {
+                content: "FIND MORE ABOUT US";
+                position: absolute;
+                width: 100%;
+                color: $color-shadow-text;
+                opacity: 0.3;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 60px;
+                z-index: -1;
+
+                @media screen and (max-width: 768px) {
+                    bottom: 20px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .partner-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 25px;
+        }
+    }
+}

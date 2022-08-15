@@ -1,0 +1,178 @@
+.about-property{
+   padding: 120px 0 60px;
+   background: url(../images/bg.png);
+
+   .container{
+      @media(min-width: 1530px) {
+         max-width: 1500px;
+      }
+   }
+
+   .section-header {
+      padding-bottom: 60px;
+
+      h2 {
+          color: $color-text-primary;
+          font-weight: 500;
+          font-size: 40px;
+          position: relative;
+          z-index: 999;
+
+          &::after {
+              content: "ALL ABOUT YOUR PROPERTY";
+              position: absolute;
+              width: 100%;
+              color: $color-shadow-text;
+              opacity: 0.3;
+              bottom: 5px;
+              left: 50%;
+              transform: translateX(-50%);
+              font-size: 60px;
+              z-index: -1;
+
+              @media screen and (max-width: 768px) {
+                  bottom: 20px;
+                  font-size: 30px;
+              }
+          }
+      }
+  } 
+
+  .property-contents{
+      color: $color-text-primary;
+      .text-header{
+         font-size: 40px;
+         font-weight: 600;
+         padding-bottom: 25px;
+         color: $color-text-primary;
+      }
+      p{
+         font-size: 28px;
+         font-weight: 400;
+         padding-bottom: 60px;
+      }
+
+      .btn-red {
+         font-weight: 400;
+         font-size: 16px;
+         border-radius: 3px;
+         background-color: rgb(159, 27, 25);
+         color: #fff;
+         margin: 0;
+         min-width: 150px;
+     }
+
+
+     .property-description{
+        padding-top: 60px;
+        h6{
+           font-size: 35px;
+           font-weight: 600;
+        }
+        p{
+           font-size: 28px;
+           font-weight: 400;
+        }
+     }
+  
+     .amenties{
+        padding-top: 30px;
+        h2{
+           font-size: 40px;
+           font-weight: 600;
+           color: $color-text-primary;
+         }
+  
+        .items{padding-top: 20px;
+           .image{
+              border: 3px solid #2c2c2c;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              overflow: hidden;
+              margin-right: 10px;
+  
+           }
+  
+           .item:hover img{
+              animation: move 0.3s 1 linear;
+           }
+             
+           @keyframes move {
+              0% {
+                 transform: translateY(-50px);
+              }
+        
+              100% {
+                 transform: translateY(0px);
+              }
+           }
+  
+  
+           p{
+              padding: 0;
+              color: $color-text-primary;
+           }
+        }
+     }
+   }
+
+
+   .easy-3-steps{
+      h3{
+         font-family: 'Roboto', sans-serif;
+         font-weight: 700;
+         font-size: 40px;
+         color: $color-text-primary;
+
+      }
+
+      .inner-steps{
+         padding-top: 20px;
+         .item{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 24px rgba(64, 199, 255, 0.32);
+            padding: 15px;
+            margin: 20px 0;
+             
+             
+            .round{
+               border-radius: 50%;
+               background-color: rgb(255, 255, 255);
+               box-shadow: 0px 0px 8px rgba(64, 199, 255, 0.32);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 60px;
+               width: 60px;
+
+               @media(max-width: 768px){
+                  height: 50px;
+                  width: 50px;   
+               }
+
+               .number{
+                  color: #f26522;
+                  font-family: 'Roboto', sans-serif;
+                  font-weight: 700;
+                  font-size: 26px;
+               }
+            }
+
+            .title{
+               color: #a90102;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 700;
+               font-size: 16px;
+            }
+            
+            .mini-details{
+               color: #7f7f7f;
+               font-family: 'Roboto', sans-serif;
+               font-weight: 400;
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}

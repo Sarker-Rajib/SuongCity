@@ -1,0 +1,145 @@
+.prices-on-houses {
+    padding: 150px 0;
+    background: url(../images/bg.png);
+
+
+    .container {
+        @media screen and (min-width: 1200px) {
+            max-width: 1185px;
+        }
+
+
+        .section-header {
+            padding-bottom: 40px;
+
+            h2 {
+                color: $color-text-primary;
+                font-weight: 500;
+                font-size: 32px;
+                position: relative;
+                z-index: 999;
+
+                &::after {
+                    content: "OUR OFFERS ARE GREAT";
+                    position: absolute;
+                    width: 100%;
+                    color: $color-shadow-text;
+                    opacity: 0.3;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 60px;
+                    z-index: -1;
+
+                    @media screen and (max-width: 768px) {
+                        bottom: 20px;
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .buttons {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+
+                .btn-red {
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    background-color: rgb(159, 27, 25);
+                    color: #fff;
+                    margin: 0;
+                    min-width: 150px;
+                }
+
+                .btn-transparent {
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    background: transparent;
+                    color: #2c3e50;
+                    border: 1px solid #2c3e503e;
+                    margin: 0;
+                    min-width: 150px;
+                }
+            }
+        }
+
+        .showcase {
+            .item-card {
+
+                .image {
+                    cursor: pointer;
+                    position: relative;
+
+                    .wraped-text {
+                        position: absolute;
+                        width: 0px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0, 0, 0, 0.7);
+                        display: flex;
+                        align-items: end;
+                        opacity: 0;
+
+                        ul {
+                            padding: 40px;
+
+                            li {
+                                font-size: 12px;
+                                color: #fff;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                    &:hover>.wraped-text {
+                        width: 100%;
+                        opacity: 1;
+                    }
+
+                    .logo-love {
+                        position: absolute;
+                        bottom: -27px;
+                        right: 30px;
+                        background: #bec7d3;
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .fa-heart {
+                            color: #fff;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .details {
+                    padding-top: 20px;
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #aab2bd;
+                    }
+
+                    h2 {
+                        padding-top: 10px;
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $color-text-primary;
+                    }
+                }
+            }
+
+            .btn-view {
+                border: 1px solid $color-text-primary;
+            }
+        }
+    }
+}

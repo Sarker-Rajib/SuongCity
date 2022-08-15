@@ -1,0 +1,32 @@
+/*=== abstracts css start === */
+@import 'abstracts/fonts';
+@import 'abstracts/variables';
+/*===// end of abstracts css === */
+
+
+/*=== base css start === */
+@import 'base/global';
+@import 'base/config';
+@import 'base/utility';
+/*===// end of base css === */
+
+
+/*=== layouts css start === */
+@import 'layouts/navbar';
+@import 'layouts/banner';
+@import 'layouts/footer';
+/*===// end of layouts css === */
+
+
+/*=== components css start === */
+@import 'components/buttons';
+@import 'components/house-showcase';
+@import 'components/start-searching';
+@import 'components/prices-on-houses';
+@import 'components/testimonial';
+@import 'components/our-blog';
+@import 'components/our-partners';
+@import 'components/about-property';
+@import 'components/client-say';
+@import 'components/get-in-touch';
+/*===// end of components css === */

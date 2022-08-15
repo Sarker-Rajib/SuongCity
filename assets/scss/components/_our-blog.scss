@@ -1,0 +1,161 @@
+.our-blog {
+    padding: 60px 0;
+    background: url(../images/bg.png);
+
+    .section-header {
+        padding-bottom: 40px;
+
+        h2 {
+            color: $color-text-primary;
+            font-weight: 500;
+            font-size: 32px;
+            position: relative;
+            z-index: 999;
+
+            &::after {
+                content: "LATEST NEWS FROM US";
+                position: absolute;
+                width: 100%;
+                color: $color-shadow-text;
+                opacity: 0.3;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 60px;
+                z-index: -1;
+
+                @media screen and (max-width: 768px) {
+                    bottom: 20px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .buttons {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            .btn-red {
+                font-weight: 600;
+                font-size: 14px;
+                border-radius: 3px;
+                background-color: rgb(159, 27, 25);
+                color: #fff;
+                margin: 0;
+                min-width: 150px;
+            }
+
+            .btn-transparent {
+                font-weight: 600;
+                font-size: 14px;
+                border-radius: 3px;
+                background: transparent;
+                color: #2c3e50;
+                border: 1px solid #2c3e503e;
+                margin: 0;
+                min-width: 150px;
+            }
+        }
+    }
+
+    .blog-contents {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+        width: 100%;
+
+        @media screen and (max-width: 1399px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media screen and (max-width: 1199px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .blog-card {
+            .image {
+                padding-bottom: 20px;
+            }
+
+            .blog-description {
+                min-height: 250px;
+                position: relative;
+                padding-bottom: 25px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        color: #aab2bd;
+                        font-weight: 300;
+                        font-size: 14px;
+
+                        &:first-child {
+                            position: relative;
+                            padding-right: 10px;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                height: 16px;
+                                width: 1px;
+                                background: rgb(126, 126, 126);
+
+                            }
+                        }
+
+                        &:last-child {
+                            padding-left: 10px;
+
+                            .name {
+                                color: #000000;
+                                font-weight: 400;
+                            }
+                        }
+
+                    }
+                }
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: $color-text-primary;
+                    padding: 15px 0;
+
+                    @media(min-width: 1400px) {
+                        white-space: pre-line;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #777777;
+                }
+
+                .linked {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: $color-text-primary;
+                }
+            }
+        }
+    }
+}

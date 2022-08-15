@@ -1,0 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $color-black;
+}
+
+.container{
+  @media screen and (min-width: 1750px) {
+    max-width: 1715px;    
+  }
+}

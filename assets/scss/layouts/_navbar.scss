@@ -1,0 +1,80 @@
+.header {
+   .top-header {
+
+      a,
+      p {
+         color: $color-text-primary;
+         font-size: 14px;
+         font-weight: 300;
+      }
+
+      .dropdown {
+         position: relative;
+
+         button {
+            font-size: 14px;
+            font-weight: 300;
+            border: none;
+         }
+
+         .dropdown-item {
+            font-size: 14px;
+            font-weight: 300;
+
+            &:focus {
+               border: none;
+            }
+         }
+
+
+         .dropdown-menu {
+            width: 100%;
+            right: 0;
+         }
+      }
+   }
+
+   .navbar-brand {
+
+      @media screen and (max-width: 768px) {
+         width: 55px;
+      }
+   }
+
+   .navbar {
+      .navbar-brand {
+         max-width: 100px;
+      }
+
+      .navbar-nav {
+         .nav-item {
+            &:not(:last-child) {
+               margin-right: 60px;
+            }
+
+            .nav-link {
+               color: $color-text-primary;
+               font-weight: 400;
+               text-transform: uppercase;
+
+               &:hover {
+                  color: $color-text-red;
+               }
+
+               &.active {
+                  color: $color-text-red;
+               }
+            }
+
+            .btn-navbar {
+               text-transform: uppercase;
+               border: 1px solid #4588f2;
+
+               &:hover {
+                  background: #4587f21c;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,143 @@
+.get-in-touch{
+   background: url(../images/bg.png);
+   padding: 100px 0;
+
+   .container{
+      @media(min-width: 1530px) {
+         max-width: 1500px;
+      }
+
+         .section-header {
+            padding-bottom: 60px;
+            text-align: center;
+
+            h2 {
+               color: $color-text-primary;
+               font-weight: 500;
+               font-size: 40px;
+               position: relative;
+               z-index: 999;
+
+               &::after {
+                  content: "GET IN TOUCH WITH US";
+                  position: absolute;
+                  width: 100%;
+                  color: $color-shadow-text;
+                  opacity: 0.3;
+                  bottom: 5px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  font-size: 60px;
+                  z-index: -1;
+
+                  @media screen and (max-width: 768px) {
+                        bottom: 20px;
+                        font-size: 30px;
+                  }
+               }
+            }
+      } 
+   
+
+      .request-form{
+         padding: 30px;
+         background-color: rgb(255, 255, 255);
+         box-shadow: 0px 0px 24px rgba(64, 199, 255, 0.32);
+
+          
+         h3{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 45px;
+            color: #a90102;
+            padding-bottom: 25px;
+         }
+         p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 26px;
+            color: #707070;
+            padding-bottom: 50px;
+         }
+
+         input{
+            display: block;
+            width: 100%;
+            padding: 0.75rem 0.75rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: $color-text-primary;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+            &::placeholder{
+               color: #bdbdbd;
+            }
+         }
+
+         .btn-red{
+            display: block;
+            width: 100%;
+            background: #a90102;
+            border-radius: 0;
+            color: #fff;
+            padding: 16px 0;
+            font-weight: 700;
+            font-size: 23px;
+            font-family: 'Roboto', sans-serif;
+         }
+      }
+
+      .get-in-touch-form{
+         padding: 30px;
+         background-color: rgb(255, 255, 255);
+         box-shadow: 0px 0px 24px rgba(64, 199, 255, 0.32);
+
+         h3{
+            font-weight: 500;
+            font-size: 35px;
+            font-family: 'Roboto', sans-serif;
+            padding-bottom: 30px;
+         }
+
+         input{
+            display: block;
+            width: 100%;
+            padding: 0.75rem 0.75rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: $color-text-primary;
+            background-color: #fff;
+            border: 1px solid rgba(64, 199, 255, 0.32);
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+            &::placeholder{
+               color: #bdbdbd;
+            }
+         }
+
+         .text-area{
+            display: block;
+            width: 100%;
+            padding: 0.75rem 0.75rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: $color-text-primary;
+            background-color: #fff;
+            border: 1px solid rgba(64, 199, 255, 0.32);
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+         }
+
+         .btn-red{
+            background: #a90102;
+            border-radius: 0;
+            color: #fff;
+            padding: 10px 14px;
+            font-weight: 500;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+         }
+      }
+   }
+}

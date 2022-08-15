@@ -1,0 +1,121 @@
+.testimonial {
+    padding: 60px 0;
+    background: url(../images/bg.png);
+
+    .section-header {
+        padding-bottom: 40px;
+
+        h2 {
+            color: $color-text-primary;
+            font-weight: 500;
+            font-size: 32px;
+            position: relative;
+            z-index: 999;
+
+            &::after {
+                content: "OUR CLIENT SAY";
+                position: absolute;
+                width: 100%;
+                color: $color-shadow-text;
+                opacity: 0.3;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 60px;
+                z-index: -1;
+
+                @media screen and (max-width: 768px) {
+                    bottom: 20px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .buttons {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            .btn-red {
+                font-weight: 600;
+                font-size: 14px;
+                border-radius: 3px;
+                background-color: rgb(159, 27, 25);
+                color: #fff;
+                margin: 0;
+                min-width: 150px;
+            }
+
+            .btn-transparent {
+                font-weight: 600;
+                font-size: 14px;
+                border-radius: 3px;
+                background: transparent;
+                color: #2c3e50;
+                border: 1px solid #2c3e503e;
+                margin: 0;
+                min-width: 150px;
+            }
+        }
+    }
+
+    .testimonial-slider {
+        padding-bottom: 65px;
+
+        .testimonial-item {
+            text-align: center;
+
+            img {
+                max-width: 125px;
+                border-radius: 50%;
+            }
+
+
+            h4 {
+                font-weight: 600;
+                font-size: 18px;
+                color: #34495e;
+                text-transform: uppercase;
+                padding-top: 15px;
+            }
+
+            .profession {
+                font-weight: 300;
+                font-size: 12px;
+                color: #aab2bd;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+
+            .comment {
+                font-weight: 300;
+                font-size: 16px;
+                color: #777777;
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        color: rgb(0, 0, 0);
+        left: calc(50% - 55px);
+        top: calc(100% - 22px);
+        z-index: 99999;
+
+        &::after {
+            font-size: 15px;
+        }
+    }
+
+    .swiper-button-next {
+        color: rgb(0, 0, 0);
+        right: calc(50% - 55px);
+        top: calc(100% - 22px);
+        z-index: 99999;
+
+        &::after {
+            font-size: 15px;
+        }
+    }
+
+    //     .swiper-pagination {}
+}
