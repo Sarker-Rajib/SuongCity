@@ -86,6 +86,46 @@
             .image {
                 margin-bottom: 20px;
                 position: relative;
+                z-index: 1;
+
+                           
+                a{
+                    position: relative;
+                    display: block;
+                    transition: all 0.3s;
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 0%;
+                        width: 0%;
+                        background: rgba(95, 92, 92, 0.678);
+                        z-index: 22;
+                        border-radius: 5px;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: " ";
+                        top: 12px;
+                        left: 12px;
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.452);
+                        z-index: 33;
+                    }
+                }
+
+              .fa-plus{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 60px;
+                color:rgb(173, 173, 173);
+                z-index: 25;
+                opacity: 0;
+              }
             }
 
             .blog-description {
@@ -159,18 +199,6 @@
                 }
             }
 
-            &:hover>.image{
-                transition: all 0.3s;
-                &::after{
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                    background: rgba(255, 255, 255, 0.678);
-                }
-            }
             
             &:hover {
                 
@@ -187,6 +215,26 @@
                     .linked{
                         color: #4588f2;
                     }
+                }
+
+                .image{
+
+                    a{
+                        &::after{
+                            height: 100%;
+                            width: 100%;
+                        }
+
+                        &::before{
+                            height: calc(100% - 24px);
+                            width: calc(100% - 24px);
+                        }
+                    }
+
+                    .fa-plus{
+                        opacity: 1;
+                    }
+
                 }
             }
         }
