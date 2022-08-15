@@ -34,7 +34,57 @@
       }
    }
 
+
+   // navbar brand
    .navbar-brand {
+      position: relative;
+      overflow: hidden;
+      padding: 5px;
+
+      &::after {
+         content:' ';
+         position:absolute;
+         height:100%;
+         width:100%;
+         top:0px;
+         left:0px;
+         z-index:2;
+         animation: moveafter 2s infinite linear;
+         background: linear-gradient(135deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 45%,rgba(255, 255, 255, 0.637) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%); /* W3C */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+         
+      }
+
+      img{
+         animation: rotat 9s infinite linear;
+      }
+
+      @keyframes rotat {
+         0% {
+            transform: rotate(0deg);
+         }
+         50% {
+            transform: rotate(180deg);
+         }
+         100% {
+            transform: rotate(360deg);
+         }
+      }
+
+      @keyframes moveafter {
+         0% {
+           top:100%;
+           left:100%;
+         }
+         50% {
+           top:-100%;
+           left:-100%;
+         }
+         100% {
+           top:-100%;
+           left:-100%;
+         }
+      }
 
       @media screen and (max-width: 768px) {
          width: 55px;
