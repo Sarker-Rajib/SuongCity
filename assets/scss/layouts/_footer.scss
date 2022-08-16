@@ -35,6 +35,10 @@
                 color: #4588f2;
             }
         }
+        p{
+            font-weight: 300;
+            font-size: 14px;
+        }
 
         ul {
             padding: 0;
@@ -57,6 +61,12 @@
                     color: #4588f2;
                 }
             }
+        }
+    }
+
+    .footer-bottom{
+        p{
+            color: #515151;
         }
     }
 }
