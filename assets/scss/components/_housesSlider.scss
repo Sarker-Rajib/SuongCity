@@ -1,0 +1,102 @@
+.banner-section {
+   // padding-bottom: 50px;
+   height: 950px;
+   
+   @media(max-width: 1400px){
+      height: 780px;
+   }
+
+   @media(max-width: 992px){
+      height: 650px;
+   }
+
+   @media(max-width: 767px){
+      padding-bottom: 50px;
+      height: 420px;
+   }
+
+   @media(max-width: 460px){
+      padding-bottom: 50px;
+      height: 350px;
+   }
+
+   .display-part {
+      height: 70%;
+      width: 100%;
+
+      .swiper-wrapper {
+         .swiper-slide {
+            display: flex;
+            align-items: center;
+   
+            img {
+               display: block;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+      }
+   }
+
+   
+
+   .tab-nav-body{
+      height: 20%;
+      box-sizing: border-box;
+
+      .tab-nav {
+         // .swiper-slide {
+         //    width: 25%;
+         //    height: 100%;
+         // }
+   
+         .swiper {
+            width: 100%;
+            // height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+      
+            .swiper-wrapper{
+               .swiper-slide {
+                  background-size: cover;
+                  background-position: center;
+      
+                  img {
+                     display: block;
+                     width: 100%;
+                     height: 100%;
+                     object-fit: cover;
+                  }
+               }
+            }
+         }
+   
+         .swiper-slide-thumb-active {
+            position: relative;
+   
+            &::before{
+               content: "";
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               background: #ffffff9a;
+               bottom: 0;
+               left: 0;
+            }
+   
+            &::after{
+               content: "";
+               position: absolute;
+               width: 140px;
+               height: 4px;
+               background: #be2121;
+               bottom: 30px;
+               left: 50%;
+               transform: translateX(-50%);
+               z-index: 999;
+            }
+         }
+      }
+   }
+}

@@ -50,6 +50,46 @@
   });
 }
 
+// slider for houses page banner sectone
+{
+  let swiper = new Swiper(".tab-nav", {
+    // loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+
+      320: {
+        slidesPerView: 2,
+        // spaceBetween: 50
+      },
+
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
+
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
+    }
+  });
+  let swiper4s = new Swiper(".display-part", {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: true,
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+}
 
 // testimonial slider
 {
