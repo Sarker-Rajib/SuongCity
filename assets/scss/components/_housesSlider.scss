@@ -1,6 +1,8 @@
 .banner-section {
-   // padding-bottom: 50px;
-   height: 950px;
+   padding-bottom: 50px;
+   background: url(../images/bg.png);
+
+   height: 1020px;
    
    @media(max-width: 1400px){
       height: 780px;

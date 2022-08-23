@@ -103,7 +103,7 @@
          height: 40px;
       }
 
-      .navigators{
+      .navigators {
          margin-left: 20px;
          color: #2c3e50;
          font-size: 20px;
@@ -111,18 +111,20 @@
    }
 }
 
-.suggestion{
+.suggestion {
    padding: 50px 0;
+   background: url(../images/bg.png);
 
-   .section-header{
+   .section-header {
       padding: 50px 0;
+
       h2 {
          color: $color-text-primary;
          font-weight: 500;
          font-size: 32px;
          position: relative;
          z-index: 999;
-   
+
          &::after {
             content: "You might also like";
             position: absolute;
@@ -134,7 +136,7 @@
             transform: translateX(-50%);
             font-size: 60px;
             z-index: -1;
-   
+
             @media screen and (max-width: 768px) {
                top: -20px;
                font-size: 30px;
